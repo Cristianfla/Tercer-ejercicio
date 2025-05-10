@@ -1,0 +1,371 @@
+a este css edita solo la parte correspondiente a Mi Experiencia con la IA con el fin de que: 1. las tarjetas no se sobrepongan entre ellas y con el texto y 2. que el texto del apartado general no se vea al fondo de las tarjetas. de resto manten toda la estructura intacta
+
+/\* Estilo Futurista Neón \*/
+body {
+margin: 0;
+font-family: 'Fredoka', sans-serif;
+background-color: #0a0a0a;
+color: #fff;
+}
+
+.barra-superior {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+height: 60px;
+background: #111;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 25px;
+z-index: 100;
+box-shadow: 0 2px 10px #0ff;
+}
+
+.barra-superior a {
+color: #0ff;
+text-decoration: none;
+font-weight: bold;
+padding: 12px 18px;
+transition: all 0.3s;
+border-bottom: 3px solid transparent;
+}
+
+.barra-superior a\:hover {
+background-color: #222;
+border-bottom: 3px solid #0ff;
+color: white;
+}
+
+.contenido-horizontal {
+margin-top: 80px;
+padding: 40px;
+}
+
+.titulo-llamativo {
+text-align: center;
+padding: 50px 20px;
+background: linear-gradient(90deg, #ff00ff, #00ffff, #ff0000, #00ff00, #0000ff, #00ffff);
+background-size: 600% 100%;
+animation: neonGradient 12s ease infinite;
+color: #fff;
+border-radius: 10px;
+box-shadow: 0 0 30px #0ff;
+}
+
+.titulo-llamativo h1 {
+font-size: 3.5rem;
+text-shadow: 0 0 8px #fff;
+}
+
+.titulo-llamativo p {
+font-size: 1.5rem;
+margin-top: 10px;
+color: #f8f8f8;
+}
+
+.bloque-dialogo {
+background: rgba(0, 0, 0, 0.4);
+border-left: 5px solid #0ff;
+margin: 40px 0;
+padding: 25px;
+border-radius: 10px;
+box-shadow: 0 0 15px #0ff;
+}
+
+.experiencia-grid,
+.reflexiones-grid,
+.recursos-grid,
+.ideas-grid {
+display: grid;
+gap: 20px;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.experiencia-tarjeta,
+.reflexion-tarjeta,
+.recurso-tarjeta,
+.idea-tarjeta {
+background: #1a1a1a;
+padding: 20px;
+border-radius: 12px;
+color: white;
+transition: transform 0.3s;
+box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.experiencia-tarjeta\:hover,
+.reflexion-tarjeta\:hover,
+.recurso-tarjeta\:hover,
+.idea-tarjeta\:hover {
+transform: scale(1.05);
+box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+}
+
+/\* Colores neón por sección \*/
+.experiencia-imagenes { border-left: 5px solid #ff00ff; }
+.experiencia-html     { border-left: 5px solid #00ffff; }
+.experiencia-redaccion { border-left: 5px solid #ff5555; }
+.experiencia-busqueda { border-left: 5px solid #00ff00; }
+.experiencia-clases   { border-left: 5px solid #0000ff; }
+
+.reflexion-sorprendente { border-left: 5px solid #00ffff; }
+.reflexion-preocupacion { border-left: 5px solid #ff0000; }
+.reflexion-reto         { border-left: 5px solid #ff00ff; }
+
+.recurso-modulo2  { border-left: 5px solid #00ffcc; }
+.recurso-ejemplo  { border-left: 5px solid #00ff99; }
+.recurso-ia       { border-left: 5px solid #ff3399; }
+.recurso-teachable { border-left: 5px solid #33ccff; }
+
+.idea-chatbot   { border-left: 5px solid #33ffcc; }
+.idea-redaccion { border-left: 5px solid #ff66ff; }
+.idea-tests     { border-left: 5px solid #00ffff; }
+.idea-historias { border-left: 5px solid #ff3333; }
+.idea-evaluacion{ border-left: 5px solid #00ff00; }
+
+.galeria img {
+width: 100%;
+border-radius: 8px;
+box-shadow: 0 0 15px #0ff;
+transition: transform 0.3s;
+}
+
+.galeria img\:hover {
+transform: scale(1.05);
+box-shadow: 0 0 25px #0ff;
+}
+
+blockquote {
+border-left: 5px solid #0ff;
+padding-left: 20px;
+font-style: italic;
+color: #ccc;
+}
+
+footer {
+text-align: center;
+padding: 20px;
+font-size: 0.9rem;
+border-top: 1px solid #333;
+color: #aaa;
+}
+
+@keyframes neonGradient {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
+/\* Fondo degradado más claro \*/
+body {
+margin: 0;
+font-family: 'Fredoka', sans-serif;
+background: linear-gradient(to bottom, #1a1a1a, #2c2c2c, #3a3a3a);
+color: #fff;
+}
+
+/\* Sombras neón múltiples para títulos \*/
+.titulo-llamativo {
+text-align: center;
+padding: 50px 20px;
+background: linear-gradient(90deg, #ff00ff, #00ffff, #ff0000, #00ff00, #0000ff, #00ffff);
+background-size: 600% 100%;
+animation: neonGradient 12s ease infinite;
+color: #fff;
+border-radius: 10px;
+box-shadow:
+0 0 15px #ff00ff,
+0 0 20px #00ffff,
+0 0 25px #ff0000,
+0 0 30px #00ff00,
+0 0 35px #0000ff;
+}
+
+.titulo-llamativo h1 {
+font-size: 3.5rem;
+text-shadow:
+0 0 8px #fff,
+0 0 12px #0ff,
+0 0 16px #f0f;
+}
+
+.titulo-llamativo p {
+font-size: 1.5rem;
+margin-top: 10px;
+color: #f8f8f8;
+text-shadow: 0 0 6px #0ff;
+}
+
+/\* Bloques de diálogo con sombras neón variadas \*/
+.bloque-dialogo {
+background: rgba(255, 255, 255, 0.05);
+border-left: 5px solid #0ff;
+margin: 40px 0;
+padding: 25px;
+border-radius: 10px;
+box-shadow:
+0 0 10px #ff66ff,
+0 0 15px #00ffff,
+0 0 20px #ff3333;
+}
+
+/\* Tarjetas con sombras neón de distintos tonos \*/
+.experiencia-tarjeta,
+.reflexion-tarjeta,
+.recurso-tarjeta,
+.idea-tarjeta {
+background: rgba(20, 20, 20, 0.9);
+padding: 20px;
+border-radius: 12px;
+color: white;
+transition: transform 0.3s;
+box-shadow:
+0 0 10px #00ffff,
+0 0 15px #ff00ff;
+}
+
+.experiencia-tarjeta\:hover,
+.reflexion-tarjeta\:hover,
+.recurso-tarjeta\:hover,
+.idea-tarjeta\:hover {
+transform: scale(1.05);
+box-shadow:
+0 0 20px #ff00ff,
+0 0 25px #00ffcc,
+0 0 30px #00ffff;
+}
+
+/\* Extra: puedes también animar las sombras si quieres mayor dinamismo \*/
+
+blockquote {
+border-left: 5px solid #0ff;
+padding-left: 20px;
+font-style: italic;
+color: #ccc;
+text-shadow: 0 0 5px #0ff;
+}
+
+footer {
+text-align: center;
+padding: 20px;
+font-size: 0.9rem;
+border-top: 1px solid #333;
+color: #aaa;
+text-shadow: 0 0 4px #0ff;
+}
+
+@keyframes neonPulse {
+0% {
+box-shadow:
+0 0 10px #00ffff,
+0 0 20px #ff00ff,
+0 0 30px #ff3333;
+}
+50% {
+box-shadow:
+0 0 20px #00ffcc,
+0 0 30px #ff66ff,
+0 0 40px #33ccff;
+}
+100% {
+box-shadow:
+0 0 10px #00ffff,
+0 0 20px #ff00ff,
+0 0 30px #ff3333;
+}
+}
+.titulo-llamativo {
+animation: neonGradient 12s ease infinite, neonPulse 4s ease-in-out infinite;
+}
+
+.experiencia-tarjeta,
+.reflexion-tarjeta,
+.recurso-tarjeta,
+.idea-tarjeta {
+animation: neonPulse 3s ease-in-out infinite;
+}
+
+/\* Estilos generales \*/
+body {
+font-family: 'Fredoka', sans-serif;
+background-color: #f0f0f0;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+color: #333;
+}
+
+h2 {
+font-size: 2em;
+color: #ff33cc; /\* Rosa neón \*/
+text-align: center;
+margin: 20px 0;
+}
+
+h3 {
+color: #33ccff; /\* Azul neón \*/
+font-size: 1.5em;
+margin-bottom: 15px;
+}
+
+/\* Estilos específicos del juego */
+.juego-container {
+background-color: #222;
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+box-shadow: 0 0 20px rgba(0, 204, 255, 0.5); /* Sombra azul neón */
+max-width: 400px;
+margin: 30px auto;
+border: 2px solid #33ccff; /* Borde azul neón \*/
+}
+
+.opciones-juego button {
+background-color: #ff33cc; /\* Rosa neón \*/
+color: white;
+border: none;
+border-radius: 8px;
+padding: 10px 20px;
+margin: 10px;
+font-size: 1.2em;
+cursor: pointer;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.opciones-juego button\:hover {
+transform: scale(1.1);
+box-shadow: 0 0 15px rgba(255, 51, 204, 1); /\* Efecto de resplandor rosa \*/
+}
+
+\#resultado-juego {
+color: #33ccff; /\* Azul neón */
+font-size: 1.3em;
+font-weight: bold;
+margin-top: 20px;
+text-shadow: 0 0 10px rgba(51, 204, 255, 1); /* Efecto de resplandor azul \*/
+}
+
+/\* Iconos \*/
+button\:before {
+font-family: 'Font Awesome 5 Free';
+margin-right: 8px;
+}
+
+button\:nth-child(1)\:before {
+content: "\f183"; /\* Icono de piedra \*/
+}
+
+button\:nth-child(2)\:before {
+content: "\f1c1"; /\* Icono de papel \*/
+}
+
+button\:nth-child(3)\:before {
+content: "\f0c0"; /\* Icono de tijera \*/
+}
+
+button {
+font-family: 'Font Awesome 5 Free';
+font-weight: 900;
+}
